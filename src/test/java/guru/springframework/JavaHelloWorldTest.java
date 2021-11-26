@@ -1,12 +1,15 @@
 package guru.springframework;
 
-// CLASS ENDING WITH TEST AS TEST CLASS
+import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class JavaHelloWorldTest {
-    // METHOD NEEDS TO START WITH TEST
-    public void testGetHello() {
+    @Test
+    public void getHello() {
         JavaHelloWorld javaHelloWorld = new JavaHelloWorld();
-        assert ("Hello Worlds".equals(javaHelloWorld.getHello()));
+        assertEquals("Hello World", javaHelloWorld.getHello());
     }
+
 
 }
